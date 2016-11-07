@@ -16,7 +16,8 @@ namespace testCommand.Class
         public override int Execute()
         {
             reciever_.SetAction(ACTIO_LIST.ADD);
-            return reciever_.GetResult();
+            //return reciever_.GetResult();
+            return ((Calculator)reciever_).x + ((Calculator)reciever_).y;
         }
     }
 
@@ -30,7 +31,8 @@ namespace testCommand.Class
         public override int Execute()
         {
             reciever_.SetAction(ACTIO_LIST.SUBTRACT);
-            return reciever_.GetResult();
+            //return reciever_.GetResult();
+            return ((Calculator)reciever_).x - ((Calculator)reciever_).y;
         }
     }
 
@@ -44,7 +46,8 @@ namespace testCommand.Class
         public override int Execute()
         {
             reciever_.SetAction(ACTIO_LIST.MULTIPLY);
-            return reciever_.GetResult();
+            //return reciever_.GetResult();
+            return ((Calculator)reciever_).x * ((Calculator)reciever_).y;
         }
     }
 
@@ -58,8 +61,8 @@ namespace testCommand.Class
         public override int Execute()
         {
             reciever_.SetAction(ACTIO_LIST.DIVIDE);
-            return reciever_.GetResult();
+            //return reciever_.GetResult();
+            return ((Calculator)reciever_).x / ((Calculator)reciever_).y;
         }
     }
-
 }

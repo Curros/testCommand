@@ -72,7 +72,6 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "Calcular";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -115,7 +114,6 @@
             this.radioDiv.TabStop = true;
             this.radioDiv.Text = "/ Division";
             this.radioDiv.UseVisualStyleBackColor = true;
-            this.radioDiv.CheckedChanged += new System.EventHandler(this.radioAdd_CheckedChanged);
             // 
             // radioMultiply
             // 
@@ -127,7 +125,6 @@
             this.radioMultiply.TabStop = true;
             this.radioMultiply.Text = "* Multiplicación";
             this.radioMultiply.UseVisualStyleBackColor = true;
-            this.radioMultiply.CheckedChanged += new System.EventHandler(this.radioAdd_CheckedChanged);
             // 
             // radioSub
             // 
@@ -139,7 +136,6 @@
             this.radioSub.TabStop = true;
             this.radioSub.Text = "- Resta";
             this.radioSub.UseVisualStyleBackColor = true;
-            this.radioSub.CheckedChanged += new System.EventHandler(this.radioAdd_CheckedChanged);
             // 
             // radioAdd
             // 
@@ -151,7 +147,6 @@
             this.radioAdd.TabStop = true;
             this.radioAdd.Text = "+ Suma";
             this.radioAdd.UseVisualStyleBackColor = true;
-            this.radioAdd.CheckedChanged += new System.EventHandler(this.radioAdd_CheckedChanged);
             // 
             // groupBox3
             // 

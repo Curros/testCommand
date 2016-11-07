@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace testCommand.Class
 {
-    //This is a helper type created to decide inside reciever
+    //This is a helper type created to decide inside receiver
     enum ACTIO_LIST
     {
         ADD,
@@ -14,7 +14,7 @@ namespace testCommand.Class
         MULTIPLY,
         DIVIDE
     }
-
+    
     //Interface
     interface IReciever
     {
@@ -25,8 +25,19 @@ namespace testCommand.Class
     //Operations of the Actions
     class Calculator : IReciever
     {
-        int x_;
-        int y_;
+        private int x_;
+        private int y_;
+
+        public int x {
+            get { return this.x_; }
+            set { this.x_ = x; }
+        }
+
+        public int y
+        {
+            get { return this.y_; }
+            set { this.y_ = y; }
+        }
 
         ACTIO_LIST currentAction;
 
@@ -45,24 +56,22 @@ namespace testCommand.Class
 
         public int GetResult()
         {
-            int result;
+            int result = 0;
 
-            if (currentAction == ACTIO_LIST.ADD)
-            {
-                result = x_ + y_;
-
-            }
-            else if (currentAction == ACTIO_LIST.MULTIPLY)
-            {
-                result = x_ * y_;
-            }
-            else if (currentAction == ACTIO_LIST.SUBTRACT)
-            {
-                result = x_ - y_;
-            }
-            else {
-                result = x_ / y_;
-            }
+            //if (currentAction == ACTIO_LIST.ADD)
+            //{
+            //    result = x_ + y_;
+            //}
+            //else if (currentAction == ACTIO_LIST.SUBTRACT)
+            //{
+            //    result = x_ - y_;
+            //} else if (currentAction == ACTIO_LIST.MULTIPLY)
+            //{
+            //    result = x_ * y_;
+            //}
+            //else {
+            //    result = x_ / y_;
+            //}
 
             return result;
         }
